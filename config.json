@@ -1,0 +1,9 @@
+{
+    "app_name": "Git Lab Practice",
+    "version": "1.0.0",
+    "author": "Lab Participant",
+    "settings": {
+        "debug": true,
+        "max_users": 100
+    }
+}
