@@ -8,17 +8,18 @@ def load_config():
 
 def greet(name):
     """A simple greeting function"""
-    return f"Hello, {name}!"
+    return f"Greetings, {name}! Welcome to our application."
 
 def main():
     config = load_config()
-    print(f"Welcome to {config['app_name']} v{config['version']}")
+    print(f"=== {config['app_name']} v{config['version']} ===")
     
     # Get user input
-    user_name = input("Please enter your name: ")
+    user_name = input("What's your name? ")
     print(greet(user_name))
     
-    print(f"Debug mode: {config['settings']['debug']}")
+    if config['settings']['debug']:
+        print("[DEBUG] Application running in debug mode")
 
 if __name__ == "__main__":
     main()
